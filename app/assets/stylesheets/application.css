@@ -38,12 +38,16 @@
 .user_info {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .chat_rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
 
 .chat_title {
@@ -62,4 +66,30 @@
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+}
+
+.user_name a {
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.make_chat {
+  font-size: 10px;
+}
+
+.make_chat a {
+  color: deepskyblue;
+  border: solid 1px lightblue;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.room_name {
+  padding: 20px 0 40px;
+}
+
+.room_name a{
+  color: white;
+  text-decoration: none;
 }
