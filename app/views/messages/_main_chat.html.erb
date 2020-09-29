@@ -8,19 +8,7 @@
     </div>
   </div>
   <div class="chat">
-    <div class="message">
-      <div class="upper_message">
-        <div class="message_user">
-          山﨑卓也
-        </div>
-        <div class="message_date">
-          2020/9/28(Mon)12:38:13
-        </div>
-      </div>
-      <div class="lower_message">
-        おはよう
-      </div>
-    </div>
+    <%= render partial: 'message', collection: @messages %>
   </div>
 
   <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
