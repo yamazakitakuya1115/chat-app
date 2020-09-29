@@ -1,6 +1,6 @@
 <div class="message">
   <div class="upper_message">
-    <div class="message-user">
+    <div class="message_user">
     <%= message.user.name %>
 
     </div>
@@ -9,10 +9,10 @@
 
     </div>
   </div>
-  <div class="lower-message">
+  <div class="lower_message">
     <div class="message_content">
     <%= message.content %>
-
     </div>
+    <%= image_tag message.image, class: 'message-image' if message.image.attached? %>
   </div>
 </div>
